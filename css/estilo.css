@@ -16,29 +16,44 @@ header{
     float: right;
     background-color: green;
     height: 50%;
+    padding-top: 35PX;
     margin-top: 5%;
-    min-height: 300px;
+    min-height: 265px;
    
 }
 #aside-esquerdo{
     float: left;
-    background-color: rgb(199, 20, 20);
+    background-color: rgb(206, 83, 83);
     width: 15%;
     margin-top: 5%;
     min-height: 300px;
+    padding-left: 1%;
+    font-size: 25px;
     
 }
 main{
-    display: center;
     background-color: yellow;
-    text-align: center;
-    margin: center;
     margin-top: 5%;
     min-height: 300px;
+    font-size: 30px;
+    
 }
 footer{
     
     background-color: pink;
     height: 15%;
     min-height: 100px;
+    font-size: 30px;
+    padding-left: 20px;
+    
+}
+table{
+    
+    padding-top: 4%;
+}
+tr{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
 }
