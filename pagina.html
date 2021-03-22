@@ -1,68 +1,57 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/estilo.css" rel="stylesheet">
+    <script type="text/javascript" src="js/funcoes.js"></script>
     <title>Minha primeira página - Abner</title>
+    
 </head>
 <body>
-    <header><h1>Cabeçalho da página</h1></header>
+    <header><h1>Formulário de Cadastro</h1></header>
 
-    <aside id="aside-esquerdo">
-        
-        <CENTER> <h3>menu de opções</h3></CENTER>
-            <ul>
-                <li>Opção 1</li>
-                <li>Opção 2</li>
-                <li>Opção 3</li>
-                <li>Opção 4</li>
-                <li>Opção 5</li>
-            </ul>
-    </aside>
-
-    <aside id="aside-direito">
-        <img src="Imagens/download.png" alt="some text" >
-    </aside>
 
     <main>
+        
+        <div id="formulario">
+            <form onsubmit="return enviarFormulario(this)">
+                <label>Nome:
+                    <input type="text" name="name" placeholder="Nome completo:" id="nome-input"></input>
+                </label>
+                <label>E-mail:
+                    <input type="email" name="email" placeholder="E-mail:" id="email-input"></input>
+                </label>    
+                <label>Telefone:
+                    <input type="text" name="Telefone" placeholder="Telefone:" id="telefone-input"></input>
+                </label>    
+                <button type="submit"name="enviar">Enviar</button>
+            </form>
+        </div>
+        
         <div id="tabela">  
             <CENTER>       
-                <table>
-                    <tr>
-                        <td>Times</td>
-                        <td>Cores</td>
-                        <td>Carros</td>
-                        <td>Números</td>
-                        <td>Letras</td>
-                        <td>Nomes</td>
-                    </tr>
-                    <tr>
-                        <td>Flamengo</td>
-                        <td>Vermelho</td>
-                        <td>Fusca</td>
-                        <td>1</td>
-                        <td>A</td>
-                        <td>Abner</td>
-                    </tr>
-                    <tr>
-                        <td>São Paulo</td>
-                        <td>Amarelo</td>
-                        <td>Gol</td>
-                        <td>2</td>
-                        <td>L</td>
-                        <td>João</td>
-                    </tr>
-                    <tr>
-                        <td>Santos</td>
-                        <td>Preto</td>
-                        <td>Uno</td>
-                        <td>3</td>
-                        <td>H</td>
-                        <td>Maria</td>
-                    </tr>
-                </table>
+               
+                    <table id="id-tabela">
+                        <thead>
+                            <tr>
+                                <th class="titulo" >
+                                    Nome
+                                </th>
+                                <th class="titulo">
+                                    E-mail
+                                </th>
+                                <th class="titulo">
+                                    Telefone
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                
             </CENTER>
         </div>    
 
